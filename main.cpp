@@ -13,10 +13,10 @@ uint32_t my_ntohl(uint32_t a) {
 
 int main(int argc, char* argv[])
 {
-    FILE *Pfh = fopen("./five-hundred.bin", "rb");//500
-    FILE *Pth = fopen("./thousand.bin", "rb"); //1000
-    //FILE *Pfh = fopen(argv[1], "rb");//500
-    //FILE *Pth = fopen(argv[2], "rb"); //1000
+    //FILE *Pfh = fopen("./five-hundred.bin", "rb");//500
+    //FILE *Pth = fopen("./thousand.bin", "rb"); //1000
+    FILE *Pfh = fopen(argv[1], "rb");//500
+    FILE *Pth = fopen(argv[2], "rb"); //1000
 
     uint8_t fh[4] = {0};//500 array
     uint8_t th[4] = {0};//1000 array
